@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+
+/* Hero Section pictures animation */
+#hero-picture {
+    width: 500px;
+    height: 600px;
+    border-radius: 50%;
+}
+
+#hero-picture:hover, #about-picture:hover {
+    animation: myAnim 2s ease 0s 1 normal forwards;
+}
+
+@keyframes myAnim {
+	0% {
+		animation-timing-function: ease-out;
+		transform: scale(1);
+		transform-origin: center center;
+	}
+
+	10% {
+		animation-timing-function: ease-in;
+		transform: scale(0.91);
+	}
+
+	17% {
+		animation-timing-function: ease-out;
+		transform: scale(0.98);
+	}
+
+	33% {
+		animation-timing-function: ease-in;
+		transform: scale(0.87);
+	}
+
+	45% {
+		animation-timing-function: ease-out;
+		transform: scale(1);
+	}
+}
+
+/* Hero Section Name animation */
+svg {
+	font-family: "Russo One", sans-serif;
+	width: 100%; height: 100%;
+}
+svg text {
+	animation: stroke 5s infinite alternate;
+	stroke-width: 2;
+	stroke: #000000;
+	font-size: 100px;
+}
+@keyframes stroke {
+	0%   {
+		fill: rgba(0,0,0,0); stroke: rgba(0,0,0,1);
+		stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
+	}
+	70%  {fill: rgba(0,0,0,0); stroke: rgba(0,0,0,1); }
+	80%  {fill: rgba(0,0,0,0); stroke: rgba(0,0,0,1); stroke-width: 3; }
+	100% {
+		fill: rgba(0,0,0,1); stroke: rgba(0,0,0,0);
+		stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
+	}
+}
+
+.wrapper {background-color: #FFFFFF}
+
+/* Projects animation */
+#project {
+  transition: transform 0.3s ease-in-out;
+}
+
+#project:hover {
+  transform: scale(1.05); /* You can adjust the value to control the level of zoom */
+}
+
+/* Card Link Style */
+.card-link-style {
+  text-decoration: none;
+  color: inherit;
+}
