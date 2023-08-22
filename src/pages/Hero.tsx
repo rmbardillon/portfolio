@@ -19,7 +19,7 @@ const Hero = () => {
             </div>
             <p className="my-3 fs-5 fw-normal">
               Hello, I'm Romeo Jr Bardillon, a dedicated software and web
-              developer hailing from the picturesque Santa Rosa Laguna,
+              developer from Santa Rosa Laguna,
               Philippines.
             </p>
             <a
