@@ -1,4 +1,4 @@
-import HeroPicture from "../assets/hero_picture.jpg";
+import { HeroPicture } from "../assets";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedinIn, faGithub } from "@fortawesome/free-brands-svg-icons";
 import resume from "../assets/resume.pdf";
