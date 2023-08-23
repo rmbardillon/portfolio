@@ -16,7 +16,7 @@ const ProjectCard = ({ name, description, image, link }: ProjectCardProps) => {
           <img
             className="card-img-top w-100 d-block fit-cover"
             style={{ height: "200px" }}
-            src={'src/assets/projects/'+image}
+            src={image}
             alt={image}
           />
           <div className="card-body p-4">
