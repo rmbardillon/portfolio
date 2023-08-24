@@ -4,7 +4,7 @@ const About = () => {
   return (
     <div className="container" id="about">
       <div className="row">
-        <div className="col-md-6">
+        <div className="col-md-6 d-flex align-items-center justify-content-center">
           <img
             className="rounded-circle img-fluid"
             src={GroupPicture}

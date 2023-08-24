@@ -6,7 +6,7 @@ import resume from "../assets/resume.pdf";
 const Hero = () => {
   return (
 		<div className="container py-4 py-xl-5" id="hero">
-			<div className="row gy-4 gy-md-0">
+			<div className="row gy-4 gy-md-0" id="hero">
 				<div className="col-md-6 text-center text-md-start d-flex d-sm-flex d-md-flex justify-content-center align-items-center justify-content-md-start align-items-md-center justify-content-xl-center">
 					<div>
 						<h1 className="text-uppercase fw-bold">ROMEO JR</h1>
@@ -17,6 +17,7 @@ const Hero = () => {
 									y="50%"
 									dy=".35em"
 									textAnchor="middle"
+									className="svg-text"
 								>
 									BARDILLON
 								</text>
@@ -54,11 +55,11 @@ const Hero = () => {
 					</div>
 				</div>
 				<div className="col-md-6">
-					<div className="p-xl-5 m-xl-5">
+					<div className="d-flex justify-content-center align-items-center">
 						<img
 							className=""
-							style={{ minHeight: "300px" }}
 							src={HeroPicture}
+                            alt="hero"
 							id="hero-picture"
 						/>
 					</div>
