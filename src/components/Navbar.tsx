@@ -1,7 +1,7 @@
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-light navbar-expand-md py-3 sticky-top">
+    <nav className="navbar navbar-light navbar-expand-md py-3 sticky-top shadow bg-white">
       <div className="container">
         <a className="navbar-brand d-flex align-items-center" href="hero">
           <b>PORTFOLIO</b>
