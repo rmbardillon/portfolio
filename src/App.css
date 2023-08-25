@@ -106,31 +106,46 @@ svg text {
 	color: inherit;
 }
 
-/* @media (max-width: 1400px) {
-	svg text {
-		animation: stroke 5s infinite alternate;
-		stroke-width: 2;
-		stroke: #000000;
-		font-size: 30px;
-	}
-} */
+/* Carousel */
+.carousel-container {
+	max-width: 100%;
+	margin: 0 auto;
+	padding: 50px;
+}
+
+.carousel-slide {
+	display: flex;
+	justify-content: center;
+}
+
+.logo {
+	width: 100px;
+	height: 100px;
+	max-width: 500px;
+	height: auto;
+	transition: transform 0.3s;
+}
+
+.logo:hover {
+	transform: scale(1.1);
+}
 
 @media (max-width: 768px) {
 	#hero {
 		flex-direction: column-reverse;
-        align-items: center;
-        justify-content: center;
+		align-items: center;
+		justify-content: center;
 	}
 	#hero-picture {
 		width: 300px;
 		height: 300px;
 		border-radius: 50%;
 	}
-    #about-picture {
-        width: 300px;
-        height: 300px;
-        border-radius: 50%;
-    }
+	#about-picture {
+		width: 300px;
+		height: 300px;
+		border-radius: 50%;
+	}
 	svg {
 		font-family: "Russo One", sans-serif;
 		width: 50%;

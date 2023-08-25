@@ -1,6 +1,6 @@
-import HeroPicture  from "../assets/heroPicture.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedinIn, faGithub } from "@fortawesome/free-brands-svg-icons";
+import HeroPicture  from "../assets/heroPicture.jpg";
 import resume from "../assets/resume.pdf";
 
 const Hero = () => {
