@@ -106,6 +106,15 @@ svg text {
 	color: inherit;
 }
 
+/* @media (max-width: 1400px) {
+	svg text {
+		animation: stroke 5s infinite alternate;
+		stroke-width: 2;
+		stroke: #000000;
+		font-size: 30px;
+	}
+} */
+
 @media (max-width: 768px) {
 	#hero {
 		flex-direction: column-reverse;
