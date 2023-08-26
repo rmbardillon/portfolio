@@ -3,7 +3,7 @@
 /* Hero Section pictures animation */
 #hero-picture {
 	width: 500px;
-	height: 600px;
+	height: 500px;
 	border-radius: 50%;
 }
 
@@ -157,4 +157,10 @@ svg text {
 		stroke: #000000;
 		font-size: 30px;
 	}
+}
+
+@media (max-width: 576px) {
+    body {
+        padding: 0 20px 0 20px;
+    }
 }
