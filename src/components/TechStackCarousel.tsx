@@ -45,7 +45,7 @@ const TechStackCarousel = () => {
 	return (
 		<div className="carousel-container">
 			<Slider {...settings}>
-				{techLogos.map((logo, index) => (
+				{techLogos.map((logo : string, index) => (
 					<div key={index} className="carousel-slide" style={{width: 120}}>
                         <div className="tooltip-container">
                             <img
