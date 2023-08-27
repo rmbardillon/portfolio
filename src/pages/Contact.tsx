@@ -8,8 +8,9 @@ const Contact = () => {
 		email: "",
 		message: "",
 	});
+    const [isSubmitting, setIsSubmitting] = useState(false);
 
-    const handleInputChange = (e) => {
+    const handleInputChange = (e:any) => {
 		const { name, value } = e.target;
 		setFormData((prevData) => ({
 			...prevData,
@@ -17,18 +18,36 @@ const Contact = () => {
 		}));
 	};
 
-    const handleSubmit = (e) => {
+    const handleSubmit = (e:any) => {
 		e.preventDefault();
+        if(formData.name === "" || formData.email === "" || formData.message === "") {
+            alert("Please fill out all fields!");
+            return;
+        }
+        $("#send-btn").prop("disabled", true);
+        setIsSubmitting(true); 
 		axios.post("https://login-services-netzwelt.onrender.com/submit-form", formData).
         then((res) => {
             console.log(res);
             alert("Message sent!");
-            $("#name").val("");
-            $("#email").val("");
-            $("#message").val("");
+            setFormData({
+				name: "",
+				email: "",
+				message: "",
+			});
+            $("#send-btn").prop("disabled", false);
+            setIsSubmitting(false);
         }).catch((err) => {
             console.log(err);
             alert("Message failed to send!");
+            setFormData({
+				name: "",
+				email: "",
+				message: "",
+			});
+
+            $("#send-btn").prop("disabled", false);
+            setIsSubmitting(false);
         });
 	};
   return (
@@ -98,9 +117,25 @@ const Contact = () => {
 								<button
 									className="btn btn-primary w-100"
 									type="submit"
-                                    onClick={handleSubmit}
+									onClick={handleSubmit}
+                                    id='send-btn'
 								>
-									Send
+									{isSubmitting ? ( // Render different content based on submitting state
+										<div className="spinner">
+											<div></div>
+											<div></div>
+											<div></div>
+											<div></div>
+											<div></div>
+											<div></div>
+											<div></div>
+											<div></div>
+											<div></div>
+											<div></div>
+										</div>
+									) : (
+										"Send"
+									)}
 								</button>
 							</div>
 						</form>

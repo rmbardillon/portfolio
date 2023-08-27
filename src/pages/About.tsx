@@ -7,16 +7,7 @@ const About = () => {
 				<div className="col">
 					<b className="text-primary">ABOUT ME</b>
 					<p className="fs-5 fw-normal">
-						I&#39;m a dedicated software and web developer hailing
-						from the picturesque Santa Rosa Laguna, Philippines.
-						With a keyboard as my canvas and lines of code as my
-						art, I specialize in crafting digital experiences that
-						seamlessly blend creativity and functionality. From
-						dynamic web applications to efficient software
-						solutions, I bring ideas to life in the digital realm.
-						Join me on a journey through my coding adventures, where
-						innovation meets technology, and let&#39;s turn your
-						visions into robust realities.
+						I am a fourth-year graduating student at the Polytechnic University of the Philippines Santa Rosa Campus, pursuing a Bachelor of Science degree in Information Technology. Throughout my academic journey, I have acquired a strong foundation in various programming languages, including C++, Java, Python, and C Sharp. These languages have provided me with a solid understanding of software development principles, algorithms, and data structures. I have enjoyed working on projects that involve problem-solving and logic implementation, honing my skills in creating efficient and robust code. With each language, I have gained experience in different paradigms and learned to adapt to various programming styles.
 					</p>
 					<div className="row">
 						<div className="col">
@@ -34,7 +25,11 @@ const About = () => {
 					<div className="row">
 						<div className="col">
 							<strong>EMAIL</strong>
-							<p>romeojrbardillon@gmail.com</p>
+							<p>
+                                <a href="mailto:romeojrbardillon@gmail.com" className="email-link">
+                                romeojrbardillon@gmail.com
+                                </a>
+                            </p>
 						</div>
 						<div className="col">
 							<strong>EMPLOYMENT</strong>

@@ -9,9 +9,6 @@ const Hero = () => {
 			<div className="row gy-4 gy-md-0" id="hero">
 				<div className="col-md-6 text-center text-md-start d-flex d-sm-flex d-md-flex justify-content-center align-items-center justify-content-md-start align-items-md-center justify-content-xl-center">
 					<div>
-						<h1 className="text-uppercase fw-bold">
-							ROMEO JR BARDILLON
-						</h1>
 						{/* <div className="wrapper">
 							<svg>
 								<text
@@ -25,11 +22,11 @@ const Hero = () => {
 								</text>
 							</svg>
 						</div> */}
-						<p className="my-3 fs-5 fw-normal">
-							Hello, I'm Romeo Jr Bardillon, a dedicated software
-							and web developer from Santa Rosa Laguna,
-							Philippines.
-						</p>
+						<h6 className="fst-italic">Hello, I'm </h6>
+						<h1 className="text-uppercase fw-bold">
+							ROMEO JR BARDILLON
+						</h1>
+						<h6 className="fst-italic"> from Santa Rosa Laguna, Philippines.</h6>
 						<a
 							className="btn btn-primary btn-lg me-2"
 							role="button"
@@ -54,6 +51,10 @@ const Hero = () => {
 						>
 							Resume
 						</a>
+						<div className="text-animation-1">WEB DEVELOPER</div>
+						<div className="text-animation-2">
+							SOFTWARE ENGINEER
+						</div>
 					</div>
 				</div>
 				<div className="col-md-6">

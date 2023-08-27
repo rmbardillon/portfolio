@@ -2,9 +2,9 @@
 
 /* Hero Section pictures animation */
 #hero-picture {
-	width: 500px;
-	height: 500px;
-	border-radius: 50%;
+	width: 430px;
+	height: 550px;
+	border-radius: 20%;
 }
 
 #hero-picture:hover,
@@ -89,6 +89,43 @@ svg text {
 	transform: translate(-4%, -17%);
 }
 
+/* About Profession Animation */
+@keyframes typing {
+	from {
+		width: 0;
+	}
+}
+
+@keyframes blink-caret {
+	50% {
+		border-color: transparent;
+	}
+}
+/* When you change the amount of characters in the h1, you have to change 
+the with: 14ch and  steps(14, end), if there is 14 characters, put 14, 
+if there is 20 put 20 */
+.text-animation-1 {
+	font: bold 200% Consolas, Monaco, monospace;
+	border-right: 0.1em solid black;
+	width: 13.2ch;
+	margin: 1em 0 0 0;
+	white-space: nowrap;
+	overflow: hidden;
+	-webkit-animation: typing 5s steps(13, end),
+		blink-caret 0.5s step-end infinite alternate;
+}
+
+.text-animation-2 {
+	font: bold 200% Consolas, Monaco, monospace;
+	border-right: 0.1em solid black;
+	width: 17.2ch;
+	margin: 0;
+	white-space: nowrap;
+	overflow: hidden;
+	-webkit-animation: typing 5s steps(17, end),
+		blink-caret 0.5s step-end infinite alternate;
+}
+
 /* Projects animation */
 #project {
 	transition: transform 0.3s ease-in-out;
@@ -130,6 +167,44 @@ svg text {
 	transform: scale(1.1);
 }
 
+/* Additional styles for tooltips */
+.tooltip-container {
+	position: relative;
+	display: inline-block;
+}
+
+.tooltip-text {
+	position: absolute;
+	bottom: -7%;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: rgba(0, 0, 0, 0.8);
+	color: white;
+	padding: 5px 10px;
+	border-radius: 5px;
+	font-size: 12px;
+	white-space: nowrap;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 0.3s, visibility 0.3s;
+}
+
+.tooltip-container:hover .tooltip-text {
+	visibility: visible;
+	opacity: 1;
+}
+
+.email-link {
+	color: #000000; /* Link color */
+	text-decoration: none;
+	transition: color 0.3s;
+}
+
+.email-link:hover {
+	color: #0056b3; /* Hover color */
+	text-decoration: underline;
+}
+
 @media (max-width: 768px) {
 	#hero {
 		flex-direction: column-reverse;
@@ -146,6 +221,10 @@ svg text {
 		height: 300px;
 		border-radius: 50%;
 	}
+	.text-animation-1,
+	.text-animation-2 {
+		margin: auto;
+	}
 	svg {
 		font-family: "Russo One", sans-serif;
 		width: 50%;
@@ -160,7 +239,108 @@ svg text {
 }
 
 @media (max-width: 576px) {
-    body {
-        padding: 0 20px 0 20px;
-    }
+	body {
+		padding: 0 20px 0 20px;
+	}
+}
+
+/* Loading animation */
+.spinner {
+  position: relative;
+  display: inline-block;
+  width: 7px;
+  height: 3px;
+  margin: 0 auto; /* Center horizontally */
+  vertical-align: middle; /* Align vertically */
+}
+
+.spinner div {
+  position: absolute;
+  width: 50%;
+  height: 150%;
+  background: white;
+  transform: rotate(calc(var(--rotation) * 1deg))
+    translate(0, calc(var(--translation) * 1%));
+  animation: spinner-fzua35 1s calc(var(--delay) * 1s) infinite ease;
+}
+
+.spinner div:nth-child(1) {
+	--delay: 0.1;
+	--rotation: 36;
+	--translation: 150;
+}
+
+.spinner div:nth-child(2) {
+	--delay: 0.2;
+	--rotation: 72;
+	--translation: 150;
+}
+
+.spinner div:nth-child(3) {
+	--delay: 0.3;
+	--rotation: 108;
+	--translation: 150;
+}
+
+.spinner div:nth-child(4) {
+	--delay: 0.4;
+	--rotation: 144;
+	--translation: 150;
+}
+
+.spinner div:nth-child(5) {
+	--delay: 0.5;
+	--rotation: 180;
+	--translation: 150;
+}
+
+.spinner div:nth-child(6) {
+	--delay: 0.6;
+	--rotation: 216;
+	--translation: 150;
+}
+
+.spinner div:nth-child(7) {
+	--delay: 0.7;
+	--rotation: 252;
+	--translation: 150;
+}
+
+.spinner div:nth-child(8) {
+	--delay: 0.8;
+	--rotation: 288;
+	--translation: 150;
+}
+
+.spinner div:nth-child(9) {
+	--delay: 0.9;
+	--rotation: 324;
+	--translation: 150;
+}
+
+.spinner div:nth-child(10) {
+	--delay: 1;
+	--rotation: 360;
+	--translation: 150;
+}
+
+@keyframes spinner-fzua35 {
+	0%,
+	10%,
+	20%,
+	30%,
+	50%,
+	60%,
+	70%,
+	80%,
+	90%,
+	100% {
+		transform: rotate(calc(var(--rotation) * 1deg))
+			translate(0, calc(var(--translation) * 1%));
+	}
+
+	50% {
+		transform: rotate(calc(var(--rotation) * 1deg))
+			translate(0, calc(var(--translation) * 1.5%));
+	}
 }

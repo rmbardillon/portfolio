@@ -47,11 +47,16 @@ const TechStackCarousel = () => {
 			<Slider {...settings}>
 				{techLogos.map((logo, index) => (
 					<div key={index} className="carousel-slide" style={{width: 120}}>
-						<img
-							src={logo}
-							alt={`Tech Logo ${index}`}
-							className="logo"
-						/>
+                        <div className="tooltip-container">
+                            <img
+                                src={logo}
+                                alt={`Tech Logo ${index}`}
+                                className="logo"
+                                />
+                            <span className="tooltip-text">
+                                {logo.split("/")[4].split(".")[0].toUpperCase()}
+                            </span>
+                        </div>
 					</div>
 				))}
 			</Slider>
