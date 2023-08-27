@@ -120,19 +120,8 @@ const Contact = () => {
 									onClick={handleSubmit}
                                     id='send-btn'
 								>
-									{isSubmitting ? ( // Render different content based on submitting state
-										<div className="spinner">
-											<div></div>
-											<div></div>
-											<div></div>
-											<div></div>
-											<div></div>
-											<div></div>
-											<div></div>
-											<div></div>
-											<div></div>
-											<div></div>
-										</div>
+									{isSubmitting ? ( 
+                                        "Sending..."
 									) : (
 										"Send"
 									)}
