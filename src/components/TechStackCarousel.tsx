@@ -28,6 +28,20 @@ const TechStackCarousel = () => {
 		mongodb,
 	];
 
+	const technames = [
+		"cplusplus",
+		"java",
+		"csharp",
+		"python",
+		"html",
+		"css",
+		"javascript",
+		"php",
+		"react",
+		"sql",
+		"mongodb",
+	];
+
 	const settings = {
 		dots: false,
 		infinite: true,
@@ -45,18 +59,22 @@ const TechStackCarousel = () => {
 	return (
 		<div className="carousel-container">
 			<Slider {...settings}>
-				{techLogos.map((logo : string, index) => (
-					<div key={index} className="carousel-slide" style={{width: 120}}>
-                        <div className="tooltip-container">
-                            <img
-                                src={logo}
-                                alt={`Tech Logo ${index}`}
-                                className="logo"
-                                />
-                            <span className="tooltip-text">
-                                {logo.split("/")[4].split(".")[0].toUpperCase()}
-                            </span>
-                        </div>
+				{techLogos.map((logo: string, index) => (
+					<div
+						key={index}
+						className="carousel-slide"
+						style={{ width: 120 }}
+					>
+						<div className="tooltip-container">
+							<img
+								src={logo}
+								alt={`Tech Logo ${index}`}
+								className="logo"
+							/>
+							<span className="tooltip-text">
+								{technames[index].toUpperCase()}
+							</span>
+						</div>
 					</div>
 				))}
 			</Slider>
