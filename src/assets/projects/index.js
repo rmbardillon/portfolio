@@ -30,6 +30,6 @@ export const products = [
 		description:
 			"The MERN Todo List Application with CRUD Operations is a web application designed to help users manage their tasks and to-do items effectively. The application provides a simple and intuitive user interface where users can create, read, update, and delete tasks. It leverages the MERN stack, consisting of MongoDB as the database, Express.js as the backend framework, React for the frontend, and Node.js as the runtime environment.",
 		image: todo,
-		link: "https://github.com/rmbardillon/crud",
+		link: "https://crud-3p7y.onrender.com/",
 	},
 ];
