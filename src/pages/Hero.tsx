@@ -38,7 +38,7 @@ const Hero = () => {
 						<a
 							className="btn btn-dark btn-lg me-2"
 							role="button"
-							href="https://github.com/rjbardillon"
+							href="https://github.com/rmbardillon"
 							target="_blank"
 						>
 							<FontAwesomeIcon icon={faGithub} />
