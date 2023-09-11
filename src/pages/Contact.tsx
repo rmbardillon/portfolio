@@ -37,7 +37,7 @@ const Contact = () => {
 			});
             $("#send-btn").prop("disabled", false);
             setIsSubmitting(false);
-        }).catch((err) => {
+        }).catch((err : String) => {
             console.log(err);
             alert("Message failed to send!");
             setFormData({
