@@ -20,8 +20,10 @@ const Projects = () => {
 						key={index}
 						name={project.name}
 						description={project.description}
-						image={project.image}
+						images={project.images}
 						link={project.link}
+                        code={project.code}
+                        stack={project.stack}
 					/>
 				))}
 			</div>
