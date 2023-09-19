@@ -2,6 +2,7 @@ import cswd from "./cswd.png";
 import lqtech from "./lqtech.png";
 import payroll from "./payroll.png";
 import todo from "./todo.png";
+import basketball from "./basketball.png";
 
 export const products = [
 	{
@@ -31,5 +32,12 @@ export const products = [
 			"The MERN Todo List Application with CRUD Operations is a web application designed to help users manage their tasks and to-do items effectively. The application provides a simple and intuitive user interface where users can create, read, update, and delete tasks. It leverages the MERN stack, consisting of MongoDB as the database, Express.js as the backend framework, React for the frontend, and Node.js as the runtime environment.",
 		image: todo,
 		link: "https://crud-3p7y.onrender.com/",
+	},
+	{
+		name: "Basketball League Website",
+		description:
+			"A basketball statistics website powered by a blend of HTML, CSS, Bootstrap, PHP, and MySQL through phpMyAdmin. This platform offers an immersive experience with up-to-date game schedules, player statistics, and team standings. Utilizing HTML and CSS for structure and style, Bootstrap ensures a responsive and visually appealing design, while PHP facilitates dynamic content delivery and interaction with the MySQL database, all managed conveniently through phpMyAdmin. ",
+		image: basketball,
+		link: "http://rose-pointe-sports.games/",
 	},
 ];
