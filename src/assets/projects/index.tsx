@@ -45,6 +45,7 @@ import ots from "./ots.png";
 import ots2 from "./ots2.png";
 import ots3 from "./ots3.png";
 import ots4 from "./ots4.png";
+import tax_calculator from "./tax-calculator.png";
 
 export const products = [
 	{
@@ -60,7 +61,22 @@ export const products = [
 		name: "LQTech Inventory System",
 		description:
 			"The LQTech Inventory System modernizes inventory management. It uses technology to simplify tracking, optimize supply chains, and promote efficiency. Businesses gain accurate insights for informed decisions and growth.",
-		images: [lqtech1, lqtech2, lqtech3, lqtech4, lqtech5, lqtech6, lqtech7, lqtech8, lqtech9, lqtech10, lqtech11, lqtech12, lqtech13, lqtech14],
+		images: [
+			lqtech1,
+			lqtech2,
+			lqtech3,
+			lqtech4,
+			lqtech5,
+			lqtech6,
+			lqtech7,
+			lqtech8,
+			lqtech9,
+			lqtech10,
+			lqtech11,
+			lqtech12,
+			lqtech13,
+			lqtech14,
+		],
 		stack: "WAMP, HTML, JavaScript, CSS, jQuery, Bootstrap",
 		code: "https://github.com/rmbardillon/lqtech",
 		link: "",
@@ -69,7 +85,20 @@ export const products = [
 		name: "Lucas Payroll System",
 		description:
 			"The Lucas Payroll System is a simple and efficient tool for businesses to manage employee salaries, taxes, and records. It automates payroll calculations, ensuring accurate and on-time payments while minimizing paperwork. Stay organized and compliant with Lucas Payroll.",
-		images: [payroll1, payroll2, payroll3, payroll4, payroll5, payroll6, payroll7, payroll8, payroll9, payroll10, payroll11, payroll12],
+		images: [
+			payroll1,
+			payroll2,
+			payroll3,
+			payroll4,
+			payroll5,
+			payroll6,
+			payroll7,
+			payroll8,
+			payroll9,
+			payroll10,
+			payroll11,
+			payroll12,
+		],
 		stack: "WAMP, HTML, JavaScript, CSS, jQuery, Bootstrap",
 		code: "https://github.com/rmbardillon/payroll",
 		link: "",
@@ -78,7 +107,18 @@ export const products = [
 		name: "Basketball League Website",
 		description:
 			"A basketball statistics website offers an immersive experience with up-to-date game schedules, player statistics, and team standings. Utilizing HTML and CSS for structure and style, Bootstrap ensures a responsive and visually appealing design, while PHP facilitates dynamic content delivery and interaction with the MySQL database, all managed conveniently through phpMyAdmin. ",
-		images: [basketball1, basketball2, basketball3, basketball4, basketball5, basketball6, basketball7, basketball8, basketball9, basketball10],
+		images: [
+			basketball1,
+			basketball2,
+			basketball3,
+			basketball4,
+			basketball5,
+			basketball6,
+			basketball7,
+			basketball8,
+			basketball9,
+			basketball10,
+		],
 		stack: "WAMP, HTML, JavaScript, CSS, jQuery, Bootstrap",
 		code: "https://github.com/rmbardillon/christmas-league.git",
 		link: "http://rose-pointe-sports.games/",
@@ -100,5 +140,14 @@ export const products = [
 		stack: "Python, Pyomo, NumPy, PYQT5",
 		code: "https://drive.google.com/drive/folders/1KiKBb35aJ55O9-uyrWeJwzd3-zt86TdK?usp=sharing",
 		link: "",
+	},
+	{
+		name: "Tax Calculator",
+		description:
+			"This tool will help users easily calculate their SSS, Pag-ibig, Philhealth, and Income Tax based on their salary input. It's designed to provide a straightforward and convenient way for individuals to understand and plan their taxes effortlessly.",
+		images: [tax_calculator],
+		stack: "Next JS, TypeScript, Tailwind CSS, Shadcn UI, Vercel",
+		code: "https://github.com/rmbardillon/tax-calculator",
+		link: "https://tax-calculator-nu-self.vercel.app/",
 	},
 ];
