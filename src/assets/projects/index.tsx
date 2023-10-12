@@ -46,6 +46,13 @@ import ots2 from "./ots2.png";
 import ots3 from "./ots3.png";
 import ots4 from "./ots4.png";
 import tax_calculator from "./tax-calculator.png";
+import ems1 from "./ems1.png";
+import ems2 from "./ems2.png";
+import ems3 from "./ems3.png";
+import ems4 from "./ems4.png";
+import emsapi1 from "./emsapi1.png";
+import emsapi2 from "./emsapi2.png";
+import emsapi3 from "./emsapi3.png";
 
 export const products = [
 	{
@@ -149,5 +156,23 @@ export const products = [
 		stack: "Next JS, TypeScript, Tailwind CSS, Shadcn UI, Vercel",
 		code: "https://github.com/rmbardillon/tax-calculator",
 		link: "https://tax-calculator-nu-self.vercel.app/",
+	},
+	{
+		name: "Simple Employee Management System",
+		description:
+			"It's a system where you can manage employee information with ease. You can add, delete, edit, and update employee details – simple as that.",
+		images: [ems1, ems2, ems3, ems4],
+		stack: "Next JS, TypeScript, Tailwind CSS, Shadcn UI, Vercel",
+		code: "https://github.com/rmbardillon/employee-management-system",
+		link: "https://employee-management-system-xi.vercel.app/",
+	},
+	{
+		name: "Employee Management System API Using Spring Boot",
+		description:
+			"This is the backbone of your Employee Management System, powered by Spring Boot. It handles all the data operations, making sure you can add, delete, edit, and update employee information seamlessly.",
+		images: [ems1, emsapi1, emsapi2, emsapi3],
+		stack: "Maven, Spring Boot, MongoDB, Java, Postman, Render",
+		code: "https://github.com/rmbardillon/employee-management-system-api",
+		link: "https://springboot-employee-api.onrender.com/",
 	},
 ];
