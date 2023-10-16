@@ -243,3 +243,7 @@ if there is 20 put 20 */
 		padding: 0 20px 0 20px;
 	}
 }
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}

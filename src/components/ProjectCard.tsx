@@ -22,7 +22,7 @@ const ProjectCard = ({
 	stack,
 }: ProjectCardProps) => {
 	const settings = {
-		dots: true,
+		dots: false,
 		infinite: true,
 		speed: 500,
 		slidesToShow: 1,
@@ -64,7 +64,7 @@ const ProjectCard = ({
 				<div className="card-body p-4">
 					<h4 className="card-title">{name}</h4>
 					<p
-						className="card-text overflow-scroll"
+						className="card-text overflow-y-scroll no-scrollbar"
 						style={{ height: "100px" }}
 					>
 						{description}
@@ -104,9 +104,9 @@ const ProjectCard = ({
 						left: "50%",
 						transform: "translate(-50%, -50%)",
 						width: "70vw",
-                        height: "80vh",
-                        maxWidth: "90vw",
-                        maxHeight: "80vh",
+						height: "80vh",
+						maxWidth: "90vw",
+						maxHeight: "80vh",
 						overflow: "hidden",
 					},
 				}}
