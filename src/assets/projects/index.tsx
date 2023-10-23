@@ -91,7 +91,7 @@ export const products = [
 	{
 		name: "Lucas Payroll System",
 		description:
-			"The Lucas Payroll System is a simple and efficient tool for businesses to manage employee salaries, taxes, and records. It automates payroll calculations, ensuring accurate and on-time payments while minimizing paperwork. Stay organized and compliant with Lucas Payroll.",
+			"The Lucas Payroll System is a simple and efficient tool for businesses to manage employee salaries, taxes, and records. It automates payroll calculations, ensuring accurate and on-time payments while minimizing paperwork. Stay organized and compliant with Lucas Payroll. You can use this credential to login username: adminrbardillon password: Owner@001",
 		images: [
 			payroll1,
 			payroll2,
@@ -108,7 +108,7 @@ export const products = [
 		],
 		stack: "WAMP, HTML, JavaScript, CSS, jQuery, Bootstrap",
 		code: "https://github.com/rmbardillon/payroll",
-		link: "",
+		link: "http://payrollsystem.liveblog365.com/",
 	},
 	{
 		name: "Basketball League Website",
