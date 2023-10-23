@@ -86,7 +86,7 @@ export const products = [
 		],
 		stack: "WAMP, HTML, JavaScript, CSS, jQuery, Bootstrap",
 		code: "https://github.com/rmbardillon/lqtech",
-		link: "",
+		link: "https://business.lqtech.tech/",
 	},
 	{
 		name: "Lucas Payroll System",
