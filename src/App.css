@@ -239,7 +239,7 @@ if there is 20 put 20 */
 }
 
 @media (max-width: 576px) {
-	body {
+	.main {
 		padding: 0 20px 0 20px;
 	}
 }
