@@ -7,7 +7,26 @@ const About = () => {
 				<div className="col">
 					<b className="text-primary">ABOUT ME</b>
 					<p className="fs-5 fw-normal">
-						I am a fourth-year graduating student at the Polytechnic University of the Philippines Santa Rosa Campus, pursuing a Bachelor of Science degree in Information Technology. Throughout my academic journey, I have acquired a strong foundation in various programming languages, including C++, Java, Python, and C Sharp. These languages have provided me with a solid understanding of software development principles, algorithms, and data structures. I have enjoyed working on projects that involve problem-solving and logic implementation, honing my skills in creating efficient and robust code. With each language, I have gained experience in different paradigms and learned to adapt to various programming styles.
+						I have successfully completed my Bachelor of Science
+						degree in Information Technology from the Polytechnic
+						University of the Philippines Santa Rosa Campus.
+						Throughout my academic journey, I have cultivated a
+						strong foundation in various programming languages,
+						including Java, C++, Python, C Sharp, and web
+						development technologies like HTML, CSS, JavaScript,
+						PHP, ReactJS, and NextJS. I also have experience in
+						backend development using Spring Boot, as well as
+						database management with SQL and MongoDB. My technical
+						proficiency extends to version control systems like Git.
+					</p>
+					<p className="fs-5 fw-normal">
+						Furthermore, I have honed a set of valuable soft skills,
+						including problem-solving skills, analytical thinking,
+						adaptability, teamwork, communication, time management,
+						and a commitment to continuous learning. These soft
+						skills complement my technical expertise, allowing me to
+						approach software development and problem-solving in a
+						holistic and effective manner.
 					</p>
 					<div className="row">
 						<div className="col">
@@ -26,10 +45,13 @@ const About = () => {
 						<div className="col">
 							<strong>EMAIL</strong>
 							<p>
-                                <a href="mailto:romeojrbardillon@gmail.com" className="email-link">
-                                romeojrbardillon@gmail.com
-                                </a>
-                            </p>
+								<a
+									href="mailto:romeojrbardillon@gmail.com"
+									className="email-link"
+								>
+									romeojrbardillon@gmail.com
+								</a>
+							</p>
 						</div>
 						<div className="col">
 							<strong>EMPLOYMENT</strong>
