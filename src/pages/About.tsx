@@ -55,7 +55,7 @@ const About = () => {
 						</div>
 						<div className="col">
 							<strong>EMPLOYMENT</strong>
-							<p>LQTECH SECURITY SOLUTIONS</p>
+							<p>Infor PSSC</p>
 						</div>
 					</div>
 					<div className="row">
