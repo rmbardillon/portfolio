@@ -54,125 +54,104 @@ import emsapi1 from "./emsapi1.png";
 import emsapi2 from "./emsapi2.png";
 import emsapi3 from "./emsapi3.png";
 
-export const products = [
-	{
-		name: "CSWDO Santa Rosa Registration System",
-		description:
-			"The CSWDO Santa Rosa Registration System simplifies social welfare program registration in Santa Rosa. Using advanced technology, it ensures easy access, accuracy, and transparency for citizen information and program management.",
-		images: [cswd, cswd2, cswd3, cswd4, cswd5, cswd6],
-		stack: "WAMP, HTML, JavaScript, CSS, jQuery, Bootstrap",
-		code: "https://github.com/rmbardillon/cswd",
-		link: "",
-	},
-	{
-		name: "LQTech Inventory System",
-		description:
-			"The LQTech Inventory System modernizes inventory management. It uses technology to simplify tracking, optimize supply chains, and promote efficiency. Businesses gain accurate insights for informed decisions and growth.",
-		images: [
-			lqtech1,
-			lqtech2,
-			lqtech3,
-			lqtech4,
-			lqtech5,
-			lqtech6,
-			lqtech7,
-			lqtech8,
-			lqtech9,
-			lqtech10,
-			lqtech11,
-			lqtech12,
-			lqtech13,
-			lqtech14,
-		],
-		stack: "WAMP, HTML, JavaScript, CSS, jQuery, Bootstrap",
-		code: "https://github.com/rmbardillon/lqtech",
-		link: "https://business.lqtech.tech/",
-	},
-	{
-		name: "Lucas Payroll System",
-		description:
-			"The Lucas Payroll System is a simple and efficient tool for businesses to manage employee salaries, taxes, and records. It automates payroll calculations, ensuring accurate and on-time payments while minimizing paperwork. Stay organized and compliant with Lucas Payroll. You can use this credential to login username: adminrbardillon password: Owner@001",
-		images: [
-			payroll1,
-			payroll2,
-			payroll3,
-			payroll4,
-			payroll5,
-			payroll6,
-			payroll7,
-			payroll8,
-			payroll9,
-			payroll10,
-			payroll11,
-			payroll12,
-		],
-		stack: "WAMP, HTML, JavaScript, CSS, jQuery, Bootstrap",
-		code: "https://github.com/rmbardillon/payroll",
-		link: "http://payrollsystem.liveblog365.com/",
-	},
-	{
-		name: "Basketball League Website",
-		description:
-			"A basketball statistics website offers an immersive experience with up-to-date game schedules, player statistics, and team standings. Utilizing HTML and CSS for structure and style, Bootstrap ensures a responsive and visually appealing design, while PHP facilitates dynamic content delivery and interaction with the MySQL database, all managed conveniently through phpMyAdmin. ",
-		images: [
-			basketball1,
-			basketball2,
-			basketball3,
-			basketball4,
-			basketball5,
-			basketball6,
-			basketball7,
-			basketball8,
-			basketball9,
-			basketball10,
-		],
-		stack: "WAMP, HTML, JavaScript, CSS, jQuery, Bootstrap",
-		code: "https://github.com/rmbardillon/christmas-league.git",
-		link: "http://rose-pointe-sports.games/",
-	},
-	{
-		name: "Todo List",
-		description:
-			"My TODO List App: Simplify your life and stay organized with this easy-to-use TODO list application. Keep track of tasks, set priorities, and never forget an important to-do again. Streamline your daily routine and boost productivity with our intuitive and efficient task management tool.",
-		images: [todo],
-		stack: "MongoDB, Express.js, React, Node.js",
-		code: "https://github.com/rmbardillon/crud",
-		link: "https://crud-3p7y.onrender.com/",
-	},
-	{
-		name: "Optimal Transmission Switching",
-		description:
-			"This project serves as a versatile engineering tool designed to streamline complex calculations and data analysis. With our software, engineers can efficiently perform various critical tasks, such as analyzing structural loads, modeling electrical circuits, or solving mathematical equations, all within a user-friendly and intuitive interface. ",
-		images: [ots, ots2, ots3, ots4],
-		stack: "Python, Pyomo, NumPy, PYQT5",
-		code: "https://drive.google.com/drive/folders/1KiKBb35aJ55O9-uyrWeJwzd3-zt86TdK?usp=sharing",
-		link: "",
-	},
-	{
-		name: "Tax Calculator",
-		description:
-			"This tool will help users easily calculate their SSS, Pag-ibig, Philhealth, and Income Tax based on their salary input. It's designed to provide a straightforward and convenient way for individuals to understand and plan their taxes effortlessly.",
-		images: [tax_calculator],
-		stack: "Next JS, TypeScript, Tailwind CSS, Shadcn UI, Vercel",
-		code: "https://github.com/rmbardillon/tax-calculator",
-		link: "https://tax-calculator-nu-self.vercel.app/",
-	},
-	{
-		name: "Simple Employee Management System",
-		description:
-			"It's a system where you can manage employee information with ease. You can add, delete, edit, and update employee details – simple as that.",
-		images: [ems1, ems2, ems3, ems4],
-		stack: "Next JS, TypeScript, Tailwind CSS, Shadcn UI, Vercel",
-		code: "https://github.com/rmbardillon/employee-management-system",
-		link: "https://employee-management-system-xi.vercel.app/",
-	},
-	{
-		name: "Employee Management System API Using Spring Boot",
-		description:
-			"This is the backbone of your Employee Management System, powered by Spring Boot. It handles all the data operations, making sure you can add, delete, edit, and update employee information seamlessly.",
-		images: [ems1, emsapi1, emsapi2, emsapi3],
-		stack: "Maven, Spring Boot, MongoDB, Java, Postman, Render",
-		code: "https://github.com/rmbardillon/employee-management-system-api",
-		link: "https://springboot-employee-api.onrender.com/",
-	},
+export interface Project {
+  name: string;
+  description: string;
+  images: string[];
+  stack: string[];
+  code: string;
+  link: string;
+}
+
+export const products: Project[] = [
+  {
+    name: "Employee Management System API",
+    description:
+      "RESTful backend service with layered architecture — controller, service, and repository pattern. Demonstrates API design and MongoDB integration.",
+    images: [ems1, emsapi1, emsapi2, emsapi3],
+    stack: ["Spring Boot", "Java", "MongoDB", "Maven", "Postman"],
+    code: "https://github.com/rmbardillon/employee-management-system-api",
+    link: "https://springboot-employee-api.onrender.com/",
+  },
+  {
+    name: "Employee Management System",
+    description:
+      "Full-stack CRUD app consuming the Spring Boot API above. Server-side rendering with Next.js and type-safe data handling.",
+    images: [ems1, ems2, ems3, ems4],
+    stack: ["Next.js", "TypeScript", "Tailwind CSS", "shadcn/ui"],
+    code: "https://github.com/rmbardillon/employee-management-system",
+    link: "https://employee-management-system-xi.vercel.app/",
+  },
+  {
+    name: "Lucas Payroll System",
+    description:
+      "Automated payroll engine handling salary computation, tax deduction logic, and employee records. Business rules implemented in PHP backend.",
+    images: [
+      payroll1, payroll2, payroll3, payroll4, payroll5, payroll6,
+      payroll7, payroll8, payroll9, payroll10, payroll11, payroll12,
+    ],
+    stack: ["PHP", "JavaScript", "MySQL", "Bootstrap"],
+    code: "https://github.com/rmbardillon/payroll",
+    link: "http://payrollsystem.liveblog365.com/",
+  },
+  {
+    name: "LQTech Inventory System",
+    description:
+      "Multi-module inventory platform with product tracking, supply chain management, and reporting dashboards for business insights.",
+    images: [
+      lqtech1, lqtech2, lqtech3, lqtech4, lqtech5, lqtech6, lqtech7,
+      lqtech8, lqtech9, lqtech10, lqtech11, lqtech12, lqtech13, lqtech14,
+    ],
+    stack: ["PHP", "JavaScript", "MySQL", "Bootstrap"],
+    code: "https://github.com/rmbardillon/lqtech",
+    link: "https://business.lqtech.tech/",
+  },
+  {
+    name: "Tax Calculator",
+    description:
+      "Philippine tax deduction tool computing SSS, Pag-ibig, PhilHealth, and Income Tax. Rule-based calculation engine with real-time output.",
+    images: [tax_calculator],
+    stack: ["Next.js", "TypeScript", "Tailwind CSS", "shadcn/ui"],
+    code: "https://github.com/rmbardillon/tax-calculator",
+    link: "https://tax-calculator-nu-self.vercel.app/",
+  },
+  {
+    name: "CSWDO Registration System",
+    description:
+      "Government registration system for social welfare programs. Handles citizen data management and program enrollment workflows.",
+    images: [cswd, cswd2, cswd3, cswd4, cswd5, cswd6],
+    stack: ["PHP", "JavaScript", "MySQL", "Bootstrap"],
+    code: "https://github.com/rmbardillon/cswd",
+    link: "",
+  },
+  {
+    name: "Optimal Transmission Switching",
+    description:
+      "Engineering optimization tool for power system analysis using mathematical modeling and constraint solving.",
+    images: [ots, ots2, ots3, ots4],
+    stack: ["Python", "Pyomo", "NumPy", "PyQt5"],
+    code: "https://drive.google.com/drive/folders/1KiKBb35aJ55O9-uyrWeJwzd3-zt86TdK?usp=sharing",
+    link: "",
+  },
+  {
+    name: "Basketball League Website",
+    description:
+      "Data-driven sports platform with game scheduling, player statistics, and team standings backed by a relational database.",
+    images: [
+      basketball1, basketball2, basketball3, basketball4, basketball5,
+      basketball6, basketball7, basketball8, basketball9, basketball10,
+    ],
+    stack: ["PHP", "JavaScript", "MySQL", "Bootstrap"],
+    code: "https://github.com/rmbardillon/christmas-league.git",
+    link: "http://rose-pointe-sports.games/",
+  },
+  {
+    name: "Todo List App",
+    description:
+      "MERN stack CRUD application demonstrating end-to-end data flow from React frontend to Express/MongoDB backend.",
+    images: [todo],
+    stack: ["React", "Node.js", "Express.js", "MongoDB"],
+    code: "https://github.com/rmbardillon/crud",
+    link: "https://crud-3p7y.onrender.com/",
+  },
 ];
